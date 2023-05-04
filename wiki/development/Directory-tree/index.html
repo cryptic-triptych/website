@@ -93,10 +93,10 @@ If any of these entries don't match when <code>preload</code> is called, then th
 </li>
 <li><code>settings/</code> This stores the user's settings saved by the 'Pi-Apps Settings' window. Each file contains one setting. For example, the file <code>settings/Preferred text editor</code> contains &quot;geany&quot; by default.</li>
 <li><code>status/</code> This folder stores all installation information for all apps.<br>
-If you install Zoom, then the <code>status/Zoom</code> file will be created, containing &quot;installed&quot;. Installed apps will have this status icon in the app list: <img src="/img/installed.png?raw=true" alt="installed"><br>
-If installation was unsuccessful, then the file will contain &quot;corrupted&quot;, and the corresponding icon looks like: <img src="/img/corrupted.png?raw=true" alt="corrupted"><br>
-If the app has been uninstalled successfully, the file contains &quot;uninstalled&quot; and the icon is <img src="/img/uninstalled.png?raw=true" alt="uninstalled"><br>
-If the app has never been installed or uninstalled, then its <code>status</code> file will not exist. The icon for that is: <img src="/img/none.png?raw=true" alt="none">. Notice the subtle difference between this icon and the &quot;uninstalled&quot; icon.</li>
+If you install Zoom, then the <code>status/Zoom</code> file will be created, containing &quot;installed&quot;. Installed apps will be green in the apps list.<br>
+If installation was unsuccessful, then the file will contain &quot;corrupted&quot;, and the corresponding color is yellow.<br>
+If the app has been uninstalled successfully, the file contains &quot;uninstalled&quot;, and the corresponding color is red.<br>
+If the app has never been installed or uninstalled, then its <code>status</code> file will not exist.</li>
 <li><code>update-status/</code> This folder keeps track of which apps can be updated. Each file's name is of an app, so <code>update-status/Zoom</code> stores the update status of the Zoom app. This folder is refreshed whenever <code>~/pi-apps/manage check-all</code> is run.<br>
 &quot;latest&quot; means that app is up to date.<br>
 &quot;new&quot; means that app is new from the repository. (in other words, it does not exist locally)<br>
