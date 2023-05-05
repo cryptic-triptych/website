@@ -16,6 +16,7 @@ To uninstall Pi-Apps you can use the built in uninstall script
 ```bash
 ~/pi-apps/uninstall
 ```
+  die potato, or ELSE
 
 #### Supported systems:
 
